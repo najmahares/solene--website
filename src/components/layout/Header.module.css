@@ -1,0 +1,88 @@
+.header {
+  background: var(--color-paper);
+  color: var(--color-ink);
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.inner {
+  width: 100%;
+  margin: 0;
+  padding: 0.75rem 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem 1.5rem;
+}
+
+.logoLink {
+  display: inline-flex;
+}
+
+.logo {
+  height: auto;
+}
+
+.list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.25rem 1.5rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.link {
+  display: inline-block;
+  padding: 0.5rem 0;
+  color: var(--color-ink);
+  font-size: 0.9rem;
+  text-decoration: none;
+  border-bottom: 2px solid transparent;
+}
+
+.link:hover {
+  color: var(--color-maroon);
+}
+
+.link[aria-current="page"] {
+  color: var(--color-maroon);
+  font-weight: 700;
+  border-bottom-color: var(--color-maroon);
+}
+
+.cta {
+  display: inline-block;
+  padding: 0.5rem 1.25rem;
+  border-radius: 999px;
+  background: var(--color-lime);
+  color: var(--color-ink);
+  font-size: 0.9rem;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.cta:hover {
+  background: var(--color-maroon);
+  color: #fff;
+}
+
+.header a:focus-visible {
+  outline: 2px solid var(--color-maroon);
+  outline-offset: 3px;
+}
+
+.skipLink {
+  position: absolute;
+  left: 0.5rem;
+  top: -4rem;
+  padding: 0.5rem 1rem;
+  background: var(--color-maroon);
+  color: #fff;
+  z-index: 10;
+}
+
+.skipLink:focus {
+  top: 0.5rem;
+}
