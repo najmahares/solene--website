@@ -123,3 +123,4 @@ export const missionContent = {
   ctaHref: "/about",
   quoteLines: ["Better information,", "Better decisions,", "Healthier gorillas."],
 } as const;
+];
