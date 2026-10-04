@@ -1,3 +1,8 @@
+import HomePage from "./home/page";
+
+export default function Home() {
+  return <HomePage />;
+}
 import type { ReactElement } from "react";
 import { CanopyIntroSection } from "./home/CanopyIntroSection";
 import { FlowSection } from "./home/FlowSection";

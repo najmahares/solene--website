@@ -83,3 +83,44 @@ export const flowSteps: readonly FlowStep[] = [
       "Recurring signs over time are flagged for veterinary review so teams can follow up early.",
   },
 ];
+export interface AudienceItem {
+  readonly id: "trackers" | "veterinarians";
+  readonly title: string;
+  readonly role: string;
+  readonly description: string;
+  readonly imageLabel: string;
+}
+
+export const designedForContent = {
+  eyebrow: "Designed for",
+  heading: "Two teams. One shared goal",
+  body: "Solène brings together the people who care for mountain gorillas, helping each team work with the right information, at the right time.",
+} as const;
+
+export const audiences: readonly AudienceItem[] = [
+  {
+    id: "trackers",
+    title: "TRACKERS",
+    role: "FIELD STAFF",
+    description:
+      "Use the mobile app to record gorilla health observations, add photos and field notes, and save findings while working offline. Information syncs when a connection becomes available.",
+    imageLabel: "Illustration of a tracker recording notes on a tablet in the forest",
+  },
+  {
+    id: "veterinarians",
+    title: "VETERINARIANS",
+    role: "CLINICAL STAFF",
+    description:
+      "Review field observations, access gorilla health histories, document clinical assessments, and coordinate treatments and follow-up care.",
+    imageLabel: "Illustration of a veterinarian examining a mountain gorilla",
+  },
+];
+
+export const missionContent = {
+  heading: "Technology that protects what matters.",
+  body: "We're a conservation technology company on a mission to protect mountain gorillas through secure, intelligent and practical tools built with the people who know the forest best.",
+  ctaLabel: "About Solène",
+  ctaHref: "/about",
+  quoteLines: ["Better information,", "Better decisions,", "Healthier gorillas."],
+} as const;
+];
