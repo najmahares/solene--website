@@ -550,7 +550,7 @@
   }
 }
 
-/* Identity section: match the overlapping values-strip layout */
+
 .identity .sectionHeading {
   margin-bottom: 28px;
 }
@@ -620,7 +620,6 @@
   line-height: 1.55;
 }
 
-/* Team cards: name, role and short description */
 .teamRole {
   margin: 7px 0 0;
   color: var(--solene-burgundy);
@@ -709,7 +708,6 @@
   overflow: visible;
 }
 
-/* === Vision / Mission heading fix === */
 .missionVisionHeader {
   display: flex;
   align-items: center;
@@ -717,7 +715,7 @@
   margin-bottom: 20px;
 }
 
-/* Override the old flex-on-h3 rule */
+
 .missionVision h3 {
   display: block;
   margin: 0;
@@ -758,7 +756,7 @@
   }
 }
 
-/* Push the identity section heading above the floating values strip */
+
 .identity .sectionHeading {
   position: relative;
   z-index: 2;
